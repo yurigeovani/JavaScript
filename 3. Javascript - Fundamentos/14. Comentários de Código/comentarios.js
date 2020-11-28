@@ -6,5 +6,5 @@
 
     atalho: CTRL+SHIF+A */
 
-// Ou comentários de linha
-// atalho: ctrl+/
+//  Ou comentários de linha
+//  atalho: ctrl+/
