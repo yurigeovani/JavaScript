@@ -3,4 +3,3 @@ function calcularOperacoes (operador1, operador2) {
 }
 
 calcularOperacoes(1, 2)
-
