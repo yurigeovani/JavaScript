@@ -36,3 +36,40 @@ function soma(a,b){
 soma(2,3)(4);
 const cincoMais = soma(2,3);
 cincoMais(4)
+
+
+/** Exemplo de high order function do site 
+ * https://medium.com/lfdev-blog/me-explica-96651fc2c105#:~:text=Higher-order%20Functions%20
+ */
+
+function portuguese() {
+    return `Olá`;
+}
+
+function english() {
+    return `Hello`;
+}
+
+function french() {
+    return `Bonjour`;
+}
+
+function italian() {
+    return `Ciao`;
+}
+
+function japanese() {
+    return `こんにちは`
+}
+
+
+function helloWorld(language,nome){
+    return `${language}, ${nome}!`;
+}
+
+
+console.log(helloWorld(portuguese(),`Alex`))
+console.log(helloWorld(english(),`Diego`))
+console.log(helloWorld(french(),`Thalyta`))
+console.log(helloWorld(italian(),`Alex`))
+console.log(helloWorld(japanese(),`Hiroshi`))
