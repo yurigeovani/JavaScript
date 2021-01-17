@@ -1,4 +1,5 @@
-let stringPontuacoes = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0" 
+//let stringPontuacoes = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0" 
+let stringPontuacoes = '10, 20, 40, 6, 30, 5';
  
 function avaliaPontuacoes (stringPontuacoes) {
     let pontuacoes = stringPontuacoes.split(", ")

@@ -2,7 +2,7 @@
 multiplicação e divisão desses valores. */
 
 
-const tabuada = function (num1, num2) {
+const tabuada = (num1, num2) => {
     let soma = num1 + num2;
     let subtracao = num1-num2;
     let multiplicacao;

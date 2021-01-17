@@ -16,5 +16,5 @@ function calculadora (valor1, operacao, valor2) {
 console.log(calculadora(2, '+', 3));
 console.log(calculadora(2, '-', 3));
 console.log(calculadora(2, '*', 3));
-console.log(calculadora(2, '/', 3));
+console.log(calculadora(2, '/', 0));
 console.log(calculadora(2, 'a', 3));

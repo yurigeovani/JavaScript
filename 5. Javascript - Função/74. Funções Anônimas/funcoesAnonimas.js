@@ -6,18 +6,18 @@ const subtracao = function (x,y){
     return x-y
 }
 
-const imprimirResultao = function (a, b, operacao = soma) {
+const imprimirResultado = function (a, b, operacao = soma) {
     console.log(operacao(a,b));
 }
 
-imprimirResultao(3,4);
+imprimirResultado(3,4);
 
-imprimirResultao(3,4,soma);
-imprimirResultao(2,4,subtracao)
-imprimirResultao(2,4,function(x,y){
+imprimirResultado(3,4,soma);
+imprimirResultado(2,4,subtracao)
+imprimirResultado(2,4,function(x,y){
     return x*y;
 })
-imprimirResultao(8,4,(x,y)=>x/y) // passando uma arrow function como parâmetro
+imprimirResultado(8,4,(x,y)=>x/y) // passando uma arrow function como parâmetro
 
 const pessoa = {
     falar: function () { // pode-se usar uma função como atributo
