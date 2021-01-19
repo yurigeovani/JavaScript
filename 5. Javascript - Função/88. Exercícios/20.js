@@ -16,62 +16,77 @@ const contaCedulas = (valor) => {
 
 const contaCedulas100 = (valor, qtd=0) => {
     if(valor<100){
-        return valor;
+        if(qtd==0){
+            return valor;
+        } else {
+            console.log(`${qtd} nota(s) de R$ 100`);
+            return valor;
+        }
     } else {
         valor-=100;
         qtd++;
-        contaCedulas100(valor,qtd)
+        return contaCedulas100(valor,qtd)
     }
-    console.log(`${qtd} nota(s) de R$ 100`)
-    return valor;
 }
 
 const contaCedulas50 = (valor, qtd=0) => {
     if(valor<50){
-        return valor;
+        if(qtd==0){
+            return valor;
+        } else {
+            console.log(`${qtd} nota(s) de R$ 50`);
+            return valor;
+        }
     } else {
         valor-=50;
         qtd++;
-        contaCedulas50(valor,qtd)
+        return contaCedulas50(valor,qtd)
     }
-    console.log(`${qtd} nota(s) de R$ 50`)
-    return valor;
 }
 
 const contaCedulas10 = (valor, qtd=0) => {
     if(valor<10){
-        return valor;
+        if(qtd==0){
+            return valor;
+        } else {
+            console.log(`${qtd} nota(s) de R$ 10`);
+            return valor;
+        }
     } else {
         valor-=10;
         qtd++;
-        contaCedulas10(valor,qtd)
+        return contaCedulas10(valor,qtd)
     }
-    console.log(`${qtd} nota(s) de R$ 10`)
-    return valor;
 }
 
 const contaCedulas5 = (valor, qtd=0) => {
     if(valor<5){
-        return valor;
+        if(qtd==0){
+            return valor;
+        } else {
+            console.log(`${qtd} nota(s) de R$ 5`);
+            return valor;
+        }
     } else {
         valor-=5;
         qtd++;
-        contaCedulas5(valor,qtd)
+        return contaCedulas5(valor,qtd)
     }
-    console.log(`${qtd} nota(s) de R$ 5`)
-    return valor;
 }
 
 const contaCedulas1 = (valor, qtd=0) => {
     if(valor<1){
-        return valor;
+        if(qtd==0){
+            return valor;
+        } else {
+            console.log(`${qtd} nota(s) de R$ 1`);
+            return valor;
+        }
     } else {
         valor-=1;
         qtd++;
-        contaCedulas1(valor,qtd)
+        return contaCedulas1(valor,qtd)
     }
-    console.log(`${qtd} nota(s) de R$ 1`)
-    return valor;
 }
 
-contaCedulas(150);
+contaCedulas(232);
