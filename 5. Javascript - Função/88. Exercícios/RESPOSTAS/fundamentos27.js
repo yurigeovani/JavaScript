@@ -31,8 +31,9 @@ function calcularTempo(alturaMenor, taxaAlturaMenor, alturaMaior, taxaAlturaMaio
         alturaMaior += taxaAlturaMaior
         qtdAnos++
     }
-    console.log(qtdAnos)
+//    console.log(qtdAnos)
     return qtdAnos
 }
 
+console.log(calcularCrescimento(100, 15, 80, 20));
 console.log(calcularCrescimento(150, 2, 130, 4));
