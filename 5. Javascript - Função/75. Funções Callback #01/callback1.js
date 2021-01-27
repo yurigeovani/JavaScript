@@ -6,10 +6,10 @@ function imprimir (nome, indice){
 
 fabricantes.forEach(imprimir);
 
-fabricantes.forEach(function(fabricante){
+/* fabricantes.forEach(function(fabricante){
     console.log(fabricante);
 })
 
 // ou fazer em arrow function
 
-fabricantes.forEach(fabricante => console.log(fabricante))
+fabricantes.forEach(fabricante => console.log(fabricante)) */

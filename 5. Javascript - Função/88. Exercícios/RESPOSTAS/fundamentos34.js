@@ -18,6 +18,6 @@ function verificacaoDeString (string1, string2) {
     return estaContido
  }
 
- console.log(verificacaoDeString('abc','cba'))
+ console.log(verificacaoDeString('abc','cbae'))
 
  
