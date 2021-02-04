@@ -20,3 +20,16 @@ OBS: A fim de testar se o objeto retornado não é o mesmo que foi passado como 
 removerPropriedade, você poderá usar a função Object.is(), por exemplo:
 Object.is(removerPropriedade(objeto, "descricao"), objeto)
 Retornará false se o objeto não for o mesmo. */
+
+objeto = {
+    a: 1,
+    b: 2
+}
+
+function removerPropriedade (objeto, propriedade) {
+    let obj = {propriedade}
+    console.log(obj)
+    return Object.is(objeto.propriedade, propriedade)
+}
+
+console.log(removerPropriedade(objeto, 'a'))
