@@ -21,15 +21,18 @@ removerPropriedade, você poderá usar a função Object.is(), por exemplo:
 Object.is(removerPropriedade(objeto, "descricao"), objeto)
 Retornará false se o objeto não for o mesmo. */
 
-objeto = {
-    a: 1,
-    b: 2
-}
 
 function removerPropriedade (objeto, propriedade) {
-    let obj = {propriedade}
-    console.log(obj)
-    return Object.is(objeto.propriedade, propriedade)
+    let copia = Object.assign({},objeto);
+    delete copia[propriedade];
+    return console.log(copia);
 }
 
-console.log(removerPropriedade(objeto, 'a'))
+let objeto = {a:1, b:2}
+
+removerPropriedade(objeto, 'a')
+removerPropriedade({
+id: 20,
+nome: "caneta",
+descricao: "Não preenchido"
+}, "descricao")
