@@ -6,7 +6,7 @@ Prevalecem as últimas regras sobre as primeiras.
 Partindo daí elabore uma função que recebe um ano e calcula se ele é ano bissexto, imprimindo no console a
 mensagem e retornando true ou false. */
 
-function calcularAnoBissexto (ano) {
+function checarAnoBissexto (ano) {
     if(ano%4!=0){
         if(ano%400==0){
             return true;
@@ -27,11 +27,11 @@ function calcularAnoBissexto (ano) {
 }
 
 
-console.log(calcularAnoBissexto(2015))
-console.log(calcularAnoBissexto(1992))
-console.log(calcularAnoBissexto(1988))
-console.log(calcularAnoBissexto(1700))
-console.log(calcularAnoBissexto(1800))
-console.log(calcularAnoBissexto(1900))
-console.log(calcularAnoBissexto(2100))
-console.log(calcularAnoBissexto(2400))
+console.log(checarAnoBissexto(2015))
+console.log(checarAnoBissexto(1992))
+console.log(checarAnoBissexto(1988))
+console.log(checarAnoBissexto(1700))
+console.log(checarAnoBissexto(1800))
+console.log(checarAnoBissexto(1900))
+console.log(checarAnoBissexto(2100))
+console.log(checarAnoBissexto(2400))
