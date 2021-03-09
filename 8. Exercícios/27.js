@@ -14,9 +14,10 @@ function inverter(obj){
 }
 
 
-//inverter({ a: 1, b: 2, c: 3}) // retornará { 1: "a", 2: "b", 3: "c"}
+inverter({ a: 1, b: 2, c: 3}) // retornará { 1: "a", 2: "b", 3: "c"}
 
 
+// Teacher resolution
 function inverter2(objeto) {
     const paresDeChaveValorInvertidos = Object.entries(objeto)
     .map( parChaveValor => parChaveValor.reverse() )
