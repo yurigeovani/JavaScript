@@ -1,0 +1,27 @@
+<h1>Links</h1>
+
+<!-- URL Absoluta -->
+<a id="inicio" href="http://www.google.com">Google 1</a> <br>
+    <!-- Carrega a página no link clicado
+            Não pode remover o HTTP. Caso remova, torna-se uma URL relativa -->
+<a href="http://www.google.com" target="_blank">Google 2</a><br><br> <!-- Abrir link em nova aba -->
+
+<!-- URL Relativa -->
+<a href="index.html">Abre a página index.html localizado no próprio diretório</a><br>
+<a href="/index.html">Voltar para raiz</a><br>
+<a href="../index.html">Voltar um diretório e abre o index.html dentro desse diretóri</a><br>
+
+
+<a href="mailto:yuri_geovani@hotmail.com">Mail contact</a><br><br>
+
+<!-- DICA:
+        Ao criar um elemento seguido de # e depois algum nome, criará um elemento com o ID do nome informado
+        Ao criar um elemento seguido de . e depois algum nome, criará um elemento com a classe do nome informado -->
+
+<div id="noticia" style="position: absolute;top: 2000px;">
+    <h1>Notícia Da Hora!</h1>
+    <p>Não era nada! ;)</p>
+    <a href="#inicio">Ir para início</a>
+</div>
+
+<a href="#noticia">Ir para Notícia</a>
