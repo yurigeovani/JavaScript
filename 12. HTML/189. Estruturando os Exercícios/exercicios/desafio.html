@@ -1,0 +1,48 @@
+<h1>Desafio</h1>
+<ul class= 'tree'>
+    <li class="folder">Sistema</li>
+    <ul>
+        <li>Preferências</li>
+        <li>Sair</li>
+    </ul>
+    <li class="folder">Cadastro</li>
+    <ul>
+        <li class="folder">Cliente</li>
+        <ul>
+            <li>Cadastrar</li>
+            <li>Atualizar</li>
+            <li>Deletar</li>
+        </ul>
+        <li class="folder">Produto</li>
+        <ul>
+            <li>Cadastrar</li>
+            <li>Atualizar</li>
+            <li>Deletar</li>
+        </ul>
+        <li class="folder">Fornecedor</li>
+        <ul>
+            <li>Cadastrar</li>
+            <li>Atualizar</li>
+            <li>Deletar</li>
+        </ul>
+    </ul>
+</ul>
+
+<link rel="stylesheet" href="./../tree.css">
+
+<script>
+    let menu = document.getElementsByClassName("folder");
+
+    for (let i of menu) {
+        i.addEventListener('click', function () {
+            this.classList.toggle('active');
+            let content = this.nextElementSibling;
+
+             if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none'
+            }
+        })
+    }
+</script>
