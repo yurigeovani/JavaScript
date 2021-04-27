@@ -11,6 +11,7 @@
 
 .tree ul {
     padding-left: 25px;
+    display: none;
 }
 
 ul.tree, .tree li {
